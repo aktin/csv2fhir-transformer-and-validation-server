@@ -1,2 +1,2 @@
 # csv2fhir-transformer-and-validation-server
-Containerized Python-based CSV-to-FHIR transformation pipeline with an integrated demo and validation server
+This repository provides a reproducible, containerized solution for transforming relational CSV data into HL7 FHIR resources and bundles according to predefined specifications. It includes a Python-based transformation engine with unit tests, schema and profile validation, and batch processing via file- or volume-based inputs. In addition, a dedicated demo and validation server is included to validate CSV uploads for structural correctness and FHIR profile compliance, returning structured feedback with errors, warnings, and statistics to support data providers and sites.
