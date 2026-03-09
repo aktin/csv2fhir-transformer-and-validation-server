@@ -1,0 +1,6 @@
+condition_id,patient_id,condition_code,condition_name,onset_date,status
+COND001,P001,I10,Essential hypertension,2020-03-10,active
+COND002,P002,E11,Type 2 diabetes mellitus,2018-06-15,active
+COND003,P003,J45,Asthma,2015-01-20,active
+COND004,P004,M79.3,Panniculitis unspecified,2022-08-05,active
+COND005,P005,E66.9,Obesity unspecified,2019-11-12,active

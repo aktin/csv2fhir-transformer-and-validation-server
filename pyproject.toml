@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv2fhir"
+version = "0.1.0"
+description = "Containerized CSV to HL7 FHIR transformation pipeline with validation server"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Alexander Kombeiz", email = "akombeiz@ukaachen.de" },
+    { name = "Sophia Sathiyanathan", email = "Sophia.Sathiyanathan@med.uni-greifswald.de" }
+]
+keywords = [
+    "fhir",
+    "hl7",
+    "csv",
+    "healthcare",
+    "validation",
+    "etl"
+]
+
+classifiers = [
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "pandas>=2.0",
+    "pydantic>=2.0",
+    "fastapi>=0.100",
+    "uvicorn>=0.23",
+    "requests>=2.31",
+    "python-multipart>=0.0.6"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.2",
+    "black>=24.0",
+    "mypy>=1.8"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "B"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true

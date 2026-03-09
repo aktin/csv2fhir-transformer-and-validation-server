@@ -1,0 +1,7 @@
+observation_id,patient_id,observation_type,observation_date,value,unit,status
+OBS001,P001,blood_pressure,2024-01-15,120,mmHg,final
+OBS002,P001,heart_rate,2024-01-15,72,bpm,final
+OBS003,P002,blood_glucose,2024-01-16,95,mg/dL,final
+OBS004,P003,temperature,2024-01-16,37.2,celsius,final
+OBS005,P004,weight,2024-01-17,65.5,kg,final
+OBS006,P005,height,2024-01-17,180,cm,final

@@ -1,0 +1,6 @@
+patient_id,first_name,last_name,date_of_birth,gender,email,phone,address
+P001,John,Doe,1980-05-15,male,john.doe@example.com,+1-555-0101,123 Main St
+P002,Jane,Smith,1985-08-22,female,jane.smith@example.com,+1-555-0102,456 Oak Ave
+P003,Robert,Johnson,1975-03-10,male,robert.j@example.com,+1-555-0103,789 Pine Rd
+P004,Sarah,Williams,1992-11-30,female,sarah.w@example.com,+1-555-0104,321 Elm St
+P005,Michael,Brown,1988-06-18,male,michael.b@example.com,+1-555-0105,654 Maple Dr
