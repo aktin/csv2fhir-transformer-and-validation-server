@@ -41,6 +41,11 @@ dev = [
     "mypy>=1.8"
 ]
 
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra --strict-markers"
